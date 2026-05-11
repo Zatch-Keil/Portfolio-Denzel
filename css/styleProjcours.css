@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Exo+2:wght@300;400;500&display=swap');
+
+/* ────────────────────────────────────────────
+   RESET DE BASE
+   Supprime les marges/paddings par défaut
+   du navigateur sur tous les éléments
+──────────────────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ────────────────────────────────────────────
+   BODY
+   Le fond général de toutes les pages
+──────────────────────────────────────────── */
+body {
+    background-color: #0a0008;
+    color: #f0e0e0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 17px;
+}
+
+/* ────────────────────────────────────────────
+   LIENS
+──────────────────────────────────────────── */
+a {
+    color: #FF1744;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* ────────────────────────────────────────────
+   HEADER
+   Barre de navigation en haut de page
+──────────────────────────────────────────── */
+header {
+    background-color: #120010;
+    padding: 14px 40px;
+    border-bottom: 2px solid #FF1744;
+}
+
+.w101 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#photomoi {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #FF1744;
+}
+
+.banniere {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.banniere h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3rem;
+    color: #FF1744;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.banniere p {
+    font-size: 0.85rem;
+    color: #c090a0;
+}
+
+.liens {
+    margin-left: auto;
+}
+
+.liens a {
+    display: inline-block;
+    padding: 6px 14px;
+    margin-left: 6px;
+    border: 1px solid #FF1744;
+    border-radius: 999px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #f0e0e0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.liens a:hover {
+    background-color: #FF1744;
+    color: #ffffff;
+}
+
+/* ────────────────────────────────────────────
+   FOOTER
+──────────────────────────────────────────── */
+footer {
+    background-color: #120010;
+    border-top: 2px solid #FF1744;
+    padding: 24px 40px;
+    margin-top: 60px;
+}
+
+.w201 {
+    text-align: center;
+    color: #c090a0;
+    font-size: 0.85rem;
+}
+
+/* ────────────────────────────────────────────
+   LAYOUT — RANGÉES ET COLONNES
+   Les blocs qui organisent le contenu
+──────────────────────────────────────────── */
+.row-title,
+.row,
+.row-center {
+    padding: 20px 40px;
+}
+
+.row-title {
+    padding-top: 40px;
+}
+
+.w100 {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.w50 {
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* ────────────────────────────────────────────
+   CARTES .blanc ET .gris
+   Les blocs de contenu principaux
+──────────────────────────────────────────── */
+.blanc {
+    background-color: #1a0018;
+    border: 1px solid #9C27B0;
+    border-radius: 12px;
+    padding: 36px;
+    margin-bottom: 16px;
+    border-top: 3px solid #FF1744;
+}
+
+.gris {
+    background-color: #120010;
+    border: 1px solid #FF1744;
+    border-radius: 12px;
+    padding: 36px;
+    margin-bottom: 16px;
+    border-top: 3px solid #9C27B0;
+}
+
+/* ────────────────────────────────────────────
+   TYPOGRAPHIE
+──────────────────────────────────────────── */
+.LOGO {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #FF1744;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.Sous-LOGO {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #9C27B0;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #FF1744;
+    margin-bottom: 12px;
+}
+
+h2.Stylisé {
+    color: #FF1744;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+h3.Stylisé {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #c090a0;
+    line-height: 1.7;
+}
+
+.Stylisé {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #c090a0;
+}
+
+/* ────────────────────────────────────────────
+   SOUS-BLOCS .bg-red ET CAPSULE
+   Pour organiser texte + image côte à côte
+──────────────────────────────────────────── */
+.capcule,
+.capsule {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.bg-red {
+    flex: 1;
+    background-color: #1a0018;
+    border: 1px solid #FF1744;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 12px;
+}
+
+.bg-red img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #9C27B0;
+}
+
+/* ────────────────────────────────────────────
+   IMAGES
+──────────────────────────────────────────── */
+/* ────────────────────────────────────────────
+   IMAGES — RÈGLE GLOBALE
+   Toutes les images sont limitées à 320px
+   sauf exceptions définies en dessous
+──────────────────────────────────────────── */
+img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 12px auto;
+}
+
+/* Exception : photo dans le header */
+#photomoi {
+    width: 44px;
+    max-width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #FF1744;
+    margin: 0;
+}
+
+/* Exception : 1ère photo à propos */
+#imgtaff {
+    width: 100%;
+    max-width: 460px;
+    border-radius: 12px;
+    border: 2px solid #9C27B0;
+    display: block;
+    margin: 20px auto 0;
+}
+
+/* Exception : image CV */
+.CV {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    border: 2px solid #00E5FF;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ────────────────────────────────────────────
+   PAGE ACCUEIL (index.html uniquement)
+──────────────────────────────────────────── */
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 680px;
+    padding: 2rem;
+}
+
+.Titre {
+    background-color: #1a0018;
+    border: 2px solid #FF1744;
+    border-radius: 12px;
+    padding: 48px;
+    text-align: center;
+    box-shadow: 0px 0px 30px rgba(255, 23, 68, 0.3);
+}
+
+.Titre h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FF1744;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.Titre h3 {
+    font-size: 0.9rem;
+    color: #c090a0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.Titre .liens a {
+    border: 1px solid #FF1744;
+    margin: 4px;
+}
+
+.Titre .liens a:hover {
+    background-color: #FF1744;
+}

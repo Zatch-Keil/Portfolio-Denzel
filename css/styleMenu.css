@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Exo+2:wght@300;400;500&display=swap');
+
+/* ────────────────────────────────────────────
+   RESET DE BASE
+──────────────────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ────────────────────────────────────────────
+   BODY
+   Centre la carte au milieu de l'écran
+──────────────────────────────────────────── */
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #0a0008;
+    color: #f0e0e0;
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ────────────────────────────────────────────
+   LIENS GLOBAUX
+──────────────────────────────────────────── */
+a {
+    color: #FF1744;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* ────────────────────────────────────────────
+   CONTENEUR CENTRAL
+──────────────────────────────────────────── */
+.center {
+    width: 100%;
+    max-width: 680px;
+    padding: 2rem;
+}
+
+.row-center {
+    width: 100%;
+}
+
+/* ────────────────────────────────────────────
+   CARTE D'ACCUEIL
+   Le bloc principal centré sur la page
+──────────────────────────────────────────── */
+.Titre {
+    background-color: #1a0018;
+    border: 2px solid #FF1744;
+    border-radius: 12px;
+    padding: 48px;
+    text-align: center;
+    box-shadow: 0px 0px 30px rgba(255, 23, 68, 0.3),
+                0px 0px 60px rgba(156, 39, 176, 0.15);
+}
+
+/* ────────────────────────────────────────────
+   TEXTE DANS LA CARTE
+──────────────────────────────────────────── */
+.Titre .Stylisé h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #FF1744;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.Titre .Stylisé h3 {
+    font-size: 0.9rem;
+    color: #c090a0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    font-weight: 400;
+}
+
+/* ────────────────────────────────────────────
+   LIENS DE NAVIGATION
+──────────────────────────────────────────── */
+.liens p {
+    margin: 0;
+}
+
+.liens a {
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 4px;
+    border: 1px solid #FF1744;
+    border-radius: 999px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #f0e0e0;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.liens a:hover {
+    background-color: #FF1744;
+    color: #ffffff;
+}
